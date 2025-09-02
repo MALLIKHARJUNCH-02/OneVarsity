@@ -8,16 +8,13 @@
 - [Screenshots](#screenshots)
 - [Demo Video](#demo-video)
 
-
-
-
 # 📊 React Dashboard Application
 
 A responsive **frontend dashboard application** built with **React.js**, featuring user authentication, a dynamic dashboard, user profile management, and API integration with a mock backend powered by **JSON Server**.
 
 ---
 
-## 🚀 Features
+## Features
 
 - 🔑 **User Authentication** – Login and Signup with form validation.
 - 📊 **Dashboard** – Sidebar navigation, top navbar, and data visualization cards.
@@ -29,7 +26,7 @@ A responsive **frontend dashboard application** built with **React.js**, featuri
 
 ---
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 ### ✅ Prerequisites
 - [Node.js](https://nodejs.org/) and npm installed.
@@ -38,7 +35,7 @@ A responsive **frontend dashboard application** built with **React.js**, featuri
   npm install -g json-server
   ```
 
-## ⚙️ Getting Started
+## Getting Started
 
 1. **Clone the repository**
   Front-end
@@ -59,6 +56,7 @@ A responsive **frontend dashboard application** built with **React.js**, featuri
    ```
 
   **For Local Development**
+---
 3. **Set up JSON Server**
    - Create a file named `db.json` in the project root with the following content:
      ```json
@@ -81,8 +79,9 @@ A responsive **frontend dashboard application** built with **React.js**, featuri
 ---
 
 ---
+---
 
-## 🌐 Live Deployments
+## Live Deployments
 
 - **Backend (JSON Server):**  
   🔗 [https://json-server-assignment1-backend.onrender.com](https://json-server-assignment1-backend.onrender.com)
@@ -103,7 +102,7 @@ Replace the backend url in
 add your backend url local host
 ---
 
-## 📖 Usage
+## Usage
 
 - 📝 **Signup** – Create a new user (with email uniqueness check).
 - 🔑 **Login** – Authenticate with email & password.
@@ -113,7 +112,7 @@ add your backend url local host
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 src/
