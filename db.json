@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "d425",
+      "name": "Mallikharjun Reddy",
+      "email": "2k2cmk@gmail.com",
+      "password": "123456789"
+    },
+    {
+      "id": "65a0",
+      "name": "arjun",
+      "email": "arjun1@gmail.com",
+      "password": "123456789"
+    }
+  ]
+}
