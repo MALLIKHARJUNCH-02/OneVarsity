@@ -47,7 +47,7 @@ export default function Signup() {
         }
 
         // add new user to server
-        fetch("http://localhost:3001/users", {
+        fetch("https://json-server-assignment1-backend.onrender.com/users", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ name, email, password }),
