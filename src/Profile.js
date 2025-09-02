@@ -7,19 +7,16 @@ export default function Profile() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // if no user info, send back to login page
     if (!user) {
       navigate("/", { replace: true });
       return;
     }
-
-    // if user email exists, get full user info from server
     if (user && user.email) {
-      fetch(`https://json-server-assignment1-backend.onrender.com?email=${encodeURIComponent(user.email)}`)
+      fetch(`https://json-server-assignment1-backend.onrender.com/users?email=${encodeURIComponent(user.email)}`)
         .then(res => res.json())
         .then(data => {
           if (data.length === 1) {
-            setUser(data[0]);  // update user context with full info
+            setUser(data[0]);
           }
         });
     }
