@@ -20,35 +20,34 @@ export default function Login() {
   const navigate = useNavigate();
 
   // handle login form submit
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
 
-    // check if inputs are empty
     if (!email || !password) {
       setError("All fields are required.");
       return;
     }
-
-    // check email format
     if (!validateEmail(email)) {
       setError("Invalid email.");
       return;
     }
 
-    // fetch user from json server matching email and password
-    fetch(`https://json-server-assignment1-backend.onrender.com/users?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`)
-      .then(res => res.json())
-      .then(users => {
-        if (users.length === 1) {
-          // set user context and redirect
-          const user = users[0];
-          setUser({ name: user.name, email: user.email });
-          navigate("/dashboard");
-        } else {
-          setError("Invalid email or password.");
-        }
-      })
-      .catch(() => setError("Network error. Please try again."));
+    try {
+      const res = await fetch(
+        `https://json-server-assignment1-backend.onrender.com/users?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`
+      );
+      const users = await res.json();
+      console.log("Fetched users:", users);
+      if (users.length === 1) {
+        const user = users[0];
+        setUser({ name: user.name, email: user.email });
+        navigate("/dashboard");
+      } else {
+        setError("Invalid email or password.");
+      }
+    } catch (err) {
+      setError("Network error. Please try again.");
+    }
   }
 
   return (
