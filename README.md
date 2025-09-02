@@ -1,3 +1,16 @@
+## Table of Contents
+- [Features](#features)
+- [Setup Instructions](#setup-instructions)
+- [Getting Started](#getting-started)
+- [Live Deployments](#live-deployments)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Screenshots](#screenshots)
+- [Demo Video](#demo-video)
+
+
+
+
 # 📊 React Dashboard Application
 
 A responsive **frontend dashboard application** built with **React.js**, featuring user authentication, a dynamic dashboard, user profile management, and API integration with a mock backend powered by **JSON Server**.
@@ -25,12 +38,19 @@ A responsive **frontend dashboard application** built with **React.js**, featuri
   npm install -g json-server
   ```
 
-### ⚙️ Getting Started
+## ⚙️ Getting Started
 
 1. **Clone the repository**
+  Front-end
    ```bash
-   git clone https://github.com/your-username/react-dashboard-app.git
-   cd react-dashboard-app
+   git clone https://github.com/MALLIKHARJUNCH-02/OneVarsity.git
+   cd assignment1
+   ```
+
+   Back-End
+   ```bash
+   git clone https://github.com/MALLIKHARJUNCH-02/json-server-assignment1_backend.git
+   cd json-server-assignment1_backend
    ```
 
 2. **Install dependencies**
@@ -38,6 +58,7 @@ A responsive **frontend dashboard application** built with **React.js**, featuri
    npm install
    ```
 
+  **For Local Development**
 3. **Set up JSON Server**
    - Create a file named `db.json` in the project root with the following content:
      ```json
@@ -57,6 +78,29 @@ A responsive **frontend dashboard application** built with **React.js**, featuri
    - App runs on: `http://localhost:3000`  
    - Mock backend runs on: `http://localhost:3001`
 
+---
+
+---
+
+## 🌐 Live Deployments
+
+- **Backend (JSON Server):**  
+  🔗 [https://json-server-assignment1-backend.onrender.com](https://json-server-assignment1-backend.onrender.com)
+
+- **Frontend (React App):**  
+  🔗 [https://one-varsity-silk.vercel.app/](https://one-varsity-silk.vercel.app/)
+
+---
+
+---
+## To Deploy in Local Host
+---
+Replace the backend url in 
+  Login.js
+  Signup.js
+  Dashboard.js
+  Profile.js
+add your backend url local host
 ---
 
 ## 📖 Usage
@@ -89,6 +133,22 @@ README.md
 
 ---
 
+---
+
+## Screenshots
+
+![Login](./login.png)
+![SignUp](./signup.png)
+![Form Validation](./formvalidation.png)
+![Form Validation](./formvalidation1.png)
+![User Profile](./userprofile.png)
+![Dashbord](./dashboard.png)
+![Added Another User](./addedanotheruser.png)
+## Demo Video
+[Watch the Demo](https://drive.google.com/file/d/1FmoleG8edRa1YJt1wNKZB21GGCHa_kQF/view?usp=sharing)
+
+
+
 ## 📝 Notes
 
 - Backend is simulated by **JSON Server** (local only).
@@ -114,7 +174,7 @@ This project is **open-source** and free to use for educational purposes.
 ## 👨‍💻 Author
 
 **[Chilukuri Mallikhajun Reddy]**  
-🔗 Replace with your [GitHub Profile](https://github.com/your-username)  
+🔗 Replace with your [GitHub Profile](https://github.com/MALLIKHARJUNCH-02)  
 
 ---
 
